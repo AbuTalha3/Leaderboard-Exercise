@@ -20,9 +20,9 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 Leaderboard App <a name="about-project"></a>
+# 📖 Leaderboard <a name="about-project"></a>
 
-Leaderboard App, where you can add you score and records. It allows you to edit and update scores list,The app is developed using Html, CSS and Javascript
+Leaderboard App, where you can add your score and records. It allows you to edit and update scores list,The app is developed using HTML, CSS and Javascript
 
 ## 🛠 Built With <a name="built-with"></a>
 
