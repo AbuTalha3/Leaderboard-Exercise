@@ -1,4 +1,61 @@
 * {
-  color: black;
-  background-color: #e5f6de;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-heading {
+  margin-bottom: 15px;
+}
+
+.score-area form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.recent-scores {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  position: absolute;
+  right: 0;
+  bottom: -25px;
+}
+
+.form-area {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  gap: 36px;
+}
+
+.scores ul {
+  border: 2px solid #444;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.scores ul li {
+  padding: 10px 0;
 }
