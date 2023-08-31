@@ -12,10 +12,6 @@ body {
   flex-direction: column;
 }
 
-.main-heading {
-  margin-bottom: 15px;
-}
-
 .score-area form {
   display: flex;
   flex-direction: column;
@@ -37,12 +33,14 @@ ul {
   justify-content: center;
   width: 35%;
   position: absolute;
-  right: 0;
   bottom: -25px;
+  right: 0;
 }
 
 .form-area {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
