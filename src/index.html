@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title> 
+  <title>Document</title>
+  <script src="index.js" defer></script>
 </head>
 <body>
   <h1>Leaderboard</h1>
@@ -12,27 +12,21 @@
     <div class="score-list-area">
       <div class="recent-scores">
         <h3>Recent scores</h3>
-        <button class="refresh-button">Refresh</button>
+        <button id="refresh" class="refresh">refresh</button>
         </div>
       <div class="scores">
-        <ul>
-          <li>Allen: 100</li>
-          <li>Miller: 101</li>
-          <li>Mike: 102</li>
-          <li>Sam: 103</li>
-          <li>Noah: 104</li>
+        <ul id="ul" class="added-scores">
         </ul>
     </div>
     </div>
     <div class="score-area">
       <h3>Add your score</h3>
-      <form class="form-area">
-        <input type="text" placeholder="Enter your name">
-        <input type="text" placeholder="Enter your score">
-        <button class="submit-button">Submit</button>
-      </form>
+      <div class="form-area">
+        <input id="name" class="name" type="text" placeholder="Enter your name">
+        <input id="score" class="score" type="number" placeholder="Enter your score">
+        <button id="submit" class="submit-button">submit</button>
+      </div>
     </div>
 </div>
-<script src="index.js" defer></script>
 </body>
 </html>
