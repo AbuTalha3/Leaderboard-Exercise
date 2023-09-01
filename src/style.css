@@ -5,12 +5,7 @@
 }
 
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgb(250, 245, 237);
+  padding: 2%;
 }
 
 .score-area form {
@@ -19,14 +14,44 @@ body {
   gap: 5px;
 }
 
+.score-list-area {
+  width: 40%;
+}
+
 .recent-scores {
+  align-items: baseline;
   display: flex;
   flex-direction: row;
   gap: 5px;
+  margin-bottom: 3%;
+}
+
+button {
+  padding: 1%;
+  box-shadow: 2px 2px 1px;
+  border: 2px solid black;
+  font-size: 1em;
+}
+
+.refresh {
+  margin-left: 1cm;
 }
 
 ul {
   list-style: none;
+}
+
+.li {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.li:nth-child(even) {
+  background-color: rgb(219, 218, 218);
+}
+
+.user-score {
+  margin-left: 2%;
 }
 
 .submit-button {
@@ -46,15 +71,91 @@ ul {
 
 .container {
   display: flex;
+  margin-top: 2%;
+  margin-left: 3%;
   gap: 36px;
 }
 
 .scores ul {
   border: 2px solid #444;
-  padding: 10px;
   margin-top: 10px;
 }
 
 .scores ul li {
   padding: 10px 0;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+input {
+  margin-bottom: 4%;
+  padding: 2%;
+  height: 30px;
+}
+
+.add-score-container {
+  margin-bottom: 9%;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .score-list-area {
+    width: 100%;
+  }
+
+  .recent-scores {
+    flex-direction: column;
+  }
+
+  .submit-button {
+    width: 100%;
+    position: static;
+    margin-top: 20px;
+  }
+
+  input {
+    margin-bottom: 3%;
+  }
+}
+
+/* Media query for screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    gap: 24px;
+  }
+
+  .score-list-area {
+    width: 50%;
+  }
+
+  input {
+    margin-bottom: 3%;
+  }
+}
+
+/* Media query for screens larger than 1023px */
+@media (min-width: 1024px) {
+  .container {
+    gap: 36px;
+  }
+
+  .score-list-area {
+    width: 40%;
+  }
+
+  .recent-scores {
+    margin-bottom: 2%;
+  }
 }
